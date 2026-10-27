@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Independencia de Centroamérica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="back">← Volver al mapa</button>
+
+<!-- ENCABEZADO: la imagen se agranda al hacer scroll -->
+<header class="hero-wrap" id="hero">
+  <div class="hero-sticky">
+    <div class="hero-img" id="heroImg"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-text" id="heroText">
+      <h1>Independencia de Centroamérica</h1>
+      <p>1821 – 1838</p>
+    </div>
+    <div class="scroll-cue" id="cue">Desliza hacia abajo ↓</div>
+  </div>
+</header>
+
+<main>
+  <!-- MAPA -->
+  <section id="mapa-seccion">
+    <h2>Explora los países</h2>
+    <p class="hint">Toca un país para ver su historia y escuchar su himno</p>
+    <div id="mapa">
+      <img src="imagenes/mapa.png" alt="Mapa de Centroamérica">
+      <svg viewBox="0 0 678 452" preserveAspectRatio="none">
+        <polygon tabindex="0" data-p="belice" points="190,35 218,30 222,45 210,75 205,100 185,118 180,70"/>
+        <polygon tabindex="0" data-p="guatemala" points="108,68 175,68 180,118 213,122 185,150 150,185 110,170 82,150 85,115 120,108 140,95"/>
+        <polygon tabindex="0" data-p="honduras" points="210,125 300,118 350,122 380,145 388,155 340,170 305,185 262,222 250,205 232,190 185,150"/>
+        <polygon tabindex="0" data-p="elsalvador" points="150,185 185,160 230,192 232,205 200,205 165,200"/>
+        <polygon tabindex="0" data-p="nicaragua" points="262,222 305,185 340,170 388,158 385,200 372,240 375,260 345,290 300,288 245,228"/>
+        <polygon tabindex="0" data-p="costarica" points="298,290 345,292 375,300 400,345 385,385 370,375 355,345 320,340 298,330"/>
+        <polygon tabindex="0" data-p="panama" points="398,345 450,350 500,345 540,340 575,350 590,385 595,415 570,420 540,385 520,380 470,400 440,420 400,385"/>
+      </svg>
+    </div>
+    <p class="hint">↓ Sigue bajando para ver la conclusión</p>
+  </section>
+
+  <!-- CONCLUSIÓN -->
+  <section id="conclusion">
+    <h2>Conclusión</h2>
+    <p>La independencia de Centroamérica se proclamó en 1821 de forma pacífica, casi sin guerra, y fue conducida sobre todo por las élites criollas. Por eso cambió quién gobernaba, pero no transformó de inmediato la vida de indígenas, campesinos y otros sectores.</p>
+    <p>Poco después llegó la incertidumbre: la anexión al Imperio Mexicano (1822-1823), las Provincias Unidas del Centro de América (1823) y la República Federal (1824). Los conflictos entre liberales y conservadores y las rivalidades entre ciudades debilitaron la unión, y hacia 1838-1841 la federación se disolvió en cinco repúblicas.</p>
+    <p>Belice y Panamá siguieron caminos distintos: Belice se independizó del Reino Unido en 1981 y Panamá se separó de Colombia en 1903. Aun así, los países comparten una historia, símbolos y una fecha que se recuerda cada 15 de septiembre.</p>
+    <p class="cierre">Una independencia lograda sin guerra, pero con una unidad que se perdió.</p>
+  </section>
+</main>
+
+<!-- POP-UP -->
+<div id="overlay"><div id="popup" role="dialog" aria-live="polite"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>

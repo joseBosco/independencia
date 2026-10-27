@@ -1,0 +1,4 @@
+Pon aquí estas imágenes (JPG), con estos nombres exactos:
+portada.jpg   (imagen grande del encabezado)
+guatemala.jpg  belice.jpg  honduras.jpg  elsalvador.jpg  nicaragua.jpg  costarica.jpg  panama.jpg
+mapa.png ya está incluido.
